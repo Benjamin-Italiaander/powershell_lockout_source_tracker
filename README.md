@@ -14,6 +14,8 @@ Before you unlock the account, you need to find out why the lockout happened, so
 Open the Powershell ISE → Run the following script, entering the name of the locked-out user
 
 
-#Hint
+# Hint
 If you like to have a list of all locked-out users, run this command in the PowerShell
- →   Search-ADAccount –LockedOut 
+
+
+Search-ADAccount –LockedOut 
