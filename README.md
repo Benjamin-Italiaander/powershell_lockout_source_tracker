@@ -11,4 +11,9 @@ Locking out an account after several failed authentication attempts is a common 
 Before you unlock the account, you need to find out why the lockout happened, so you can mitigate security risks and possibly prevent the same issue from happening again. PowerShell can be a good tool for determining why an account was locked out and the source — the script provided above lets you search for lockouts related to a single user account by examining all events with ID 4740 in the security log. The output contains the details needed for further investigation: the computer where the account lockout occurred and the time when it happened.
 
 # Run Script
-Open the Powershell ISE → Run the following script, entering the name of the locked-out user:
+Open the Powershell ISE → Run the following script, entering the name of the locked-out user
+
+
+#Hint
+If you like to have a list of all locked-out users, run this command in the PowerShell
+ →   Search-ADAccount –LockedOut 
